@@ -1,0 +1,94 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Navbar styles */
+.navbar {
+  @apply bg-gray-900 text-white py-4 px-6 flex justify-between items-center sticky w-full z-10;
+}
+
+.flex-stl{
+  @apply flex items-center justify-between
+}
+
+.container{
+  @apply flex items-center justify-between w-full
+}
+
+.navbar a {
+  @apply text-white hover:bg-gray-700 px-4 py-2 rounded;
+}
+
+/* Main content styles */
+.main-content {
+  @apply bg-white mx-auto max-w-screen-lg p-8 mt-16 rounded shadow-lg;
+}
+
+/* Footer styles */
+.footer {
+  @apply bg-gray-900 text-white py-4 px-6 text-center bottom-0 w-full;
+}
+
+/* Page-specific styles */
+
+/* Home page */
+.home-container {
+  @apply p-8;
+}
+
+.home-container h1 {
+  @apply text-4xl font-bold mb-4 text-gray-800;
+}
+
+.home-container p {
+  @apply text-lg text-gray-600 leading-relaxed mb-4;
+}
+
+.home-container a {
+  @apply text-blue-500 hover:text-blue-700 transition-colors duration-300;
+}
+
+/* Events page */
+.events-container {
+  @apply p-8;
+}
+
+.events-container h2 {
+  @apply text-3xl font-bold mb-4 text-gray-800;
+}
+
+.events-container p {
+  @apply text-lg text-gray-600 leading-relaxed mb-4;
+}
+
+/* Members page */
+.members-container {
+  @apply p-8;
+}
+
+.members-container h2 {
+  @apply text-3xl font-bold mb-4 text-gray-800;
+}
+
+.members-container p {
+  @apply text-lg text-gray-600 leading-relaxed mb-4;
+}
+
+footer.footer {
+  margin-top: auto;
+}
